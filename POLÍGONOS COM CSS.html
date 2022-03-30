@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desenho</title>
+
+    <style>
+        #container {
+            background-color: blueviolet;
+            margin: 0 auto;
+            margin-top: 30vh;
+            width: 200px;
+            height: 250px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .clip {
+            clip-path: polygon(0% 0%, 20% 30%, 80% 30%, 100% 0%, 100% 60%, 70% 100%, 30% 100%, 0% 60%);
+            border-radius: 50px;
+        }
+        
+        .olho {
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto;
+            margin-top: 60%;
+            border-radius: 100%;
+        }
+        
+        .naris {
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 65%;
+            width: 50px;
+            height: 30px;
+            clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="clip" id="container">
+        <div class="olho " id="lado1"></div>
+        <div class="naris"></div>
+        <div class="olho lado2"></div>
+
+    </div>
+</body>
+
+</html>
